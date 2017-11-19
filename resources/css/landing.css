@@ -1,15 +1,35 @@
-html {
-  font-size: 18px;
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v8/gQ0PT3rPU_Et2ExNz-ahmpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 
+body {
+  font-family: "Nixie One";
+  font-size: 18px;
+  margin: 0;
+
+}
+
+a {
+  color: #004F66;
 }
 
 nav {
   display: flex;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .navbar-nav {
   display: flex;
   float: right;
+}
+
+.navbar-brand {
+  font-size: 2rem;
 }
 
 li {
@@ -18,13 +38,16 @@ li {
 
 .jumbotron {
   text-align: center;
-  height: 45rem;
   display: flex;
   align-items: center;
   background-image: url("../images/pexels-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0.25px 0.25px 0.25px #000;
 }
 
 .jumbotron .container {
@@ -32,5 +55,71 @@ li {
 }
 
 .jumbotron h1 {
-  font-size: 5rem;
+  font-size: 8rem;
+
+}
+
+.jumbotron span {
+  color: #000;
+  text-shadow: 0.25px 0.25px 0.25px #fff;
+}
+
+.small {
+  display: none;
+}
+
+.extra-small {
+  display: none;
+}
+
+.btn {
+  background-color: #004F66;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #008AB2;
+  transition: all 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+  a {
+    color: #fff;
+  }
+  .small {
+    color: #000;
+    display: block;
+  }
+
+  .jumbotron .small span {
+    color: #000;
+  }
+
+  .medium {display: none;}
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navbar-nav .contact:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .jumbotron h2 span {
+    color: #fff;
+    text-shadow: 0.25px 0.25px 0.25px #000;
+  }
+
+  .jumbotron h1 span {
+
+  }
+
+  .small {display: none}
+
+  .extra-small {display: block}
+
 }
