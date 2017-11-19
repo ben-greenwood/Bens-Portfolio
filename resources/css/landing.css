@@ -1,0 +1,36 @@
+html {
+  font-size: 18px;
+
+}
+
+nav {
+  display: flex;
+}
+
+.navbar-nav {
+  display: flex;
+  float: right;
+}
+
+li {
+  display: inline-flex;
+}
+
+.jumbotron {
+  text-align: center;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/pexels-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jumbotron .container {
+  display: inline-block;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+}
