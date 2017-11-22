@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v8/gQ0PT3rPU_Et2ExNz-ahmpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  font-family: "Nixie One";
+  font-size: 18px;
+  margin: 0;
+
+}
+
+a {
+  color: #004F66;
+}
+
+nav {
+  display: flex;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  float: right;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+li {
+  display: inline-flex;
+}
+
+.jumbotron {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0.25px 0.25px 0.25px #000;
+  background-color: #5D6363;
+}
+
+.jumbotron .container {
+  display: inline-block;
+}
+
+.jumbotron h1 {
+  font-size: 8rem;
+
+}
+
+.jumbotron span {
+  color: #000;
+  text-shadow: 0.25px 0.25px 0.25px #fff;
+}
