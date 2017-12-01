@@ -155,34 +155,13 @@ h6 {
 /* Footer */
 
 footer {
-  margin-bottom: 3rem;
   display: flex;
-
-}
-
-footer p {
-  text-align: center;
-  margin-left: -3rem;
-}
-
-footer li {
-  list-style: none;
-  display: inline-flex;
-}
-
-footer ul {
-position: absolute;
-}
-
-.footer-header {
-  padding-bottom: 5px;
-  position: relative;
-  top: 2px;
+  flex-direction: column;
 }
 
 a {
   color: #3C74A5;
-  cursor: auto;
+
   display: inline-flex;
 }
 
@@ -191,7 +170,12 @@ a {
 }
 
 .copyright-tag {
-  display: flex;
-  position: relative;
-  top:17rem;
+  float: right;
+  margin-top: 5rem;
+}
+
+.fa {
+  font-family: "Nixie One";
+  font-size: 18px;
+  
 }
