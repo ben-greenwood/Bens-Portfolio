@@ -36,6 +36,11 @@ nav {
   font-size: 2rem;
 }
 
+.navbar .nav a:hover{
+  background-color: #fff;
+}
+
+
 li {
   display: inline-flex;
 }
@@ -60,7 +65,20 @@ li {
 
 .jumbotron h1 {
   font-size: 8rem;
+}
 
+.jumbotron .fa {
+  color: white;
+  padding: 1rem;
+}
+
+.jumbotron a:hover {
+  transform: scale(1.5);
+  transition: all 200ms ease-in-out;
+}
+
+.jumbotron a{
+  text-decoration: none;
 }
 
 /*Profile Section*/
@@ -115,11 +133,24 @@ h5 {
 
 
 
-section .row img {
+.portfolio img {
   margin: 0 0 1rem;
   width: 100%;
   height: 40rem;
   padding-top:  2rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+
+  transition: transform 0.5s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
 }
 
 /* Work Experience Section */
@@ -150,6 +181,15 @@ h6 {
   padding-left: 1rem;
 }
 
+.fa-check-square-o {
+  margin-top: 2px;
+  padding-right: 2px;
+}
+
+.additional {
+  border-top: 1px solid black;
+  margin-top: 10rem;
+}
 
 
 /* Footer */
@@ -175,7 +215,73 @@ a {
 }
 
 .fa {
-  font-family: "Nixie One";
-  font-size: 18px;
-  
+  padding-right: 0.5rem;
+  color: #004F66;
+}
+
+.fa-facebook {
+  padding-left: 0;
+}
+
+/*animation element sliding left*/
+
+.animation-element.slide-left{
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+  transform: translate3d(-500px, 0px, 0px);
+}
+
+.animation-element.slide-left.first{
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.second {
+  opacity: 0;
+  transition: all 1s linear 500ms;
+  transform: translate3d(-150px, 0px, 0px);
+}
+
+.animation-element.slide-left.third {
+  opacity: 0;
+  transition: all 500ms linear 1s;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.fourth {
+  opacity: 0;
+  transition: all 1s linear 1.5s;
+  transform: translate3d(-150px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@media only screen and (max-width: 768px) {
+
+  footer {
+    display: none;
+  }
+
+  .education {
+    margin-bottom:0;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .portfolio {
+    background-color: #F0F2F4;
+    background-size: cover;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: 7rem 0rem;
+  }
+
+
 }

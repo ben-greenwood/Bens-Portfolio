@@ -34,6 +34,8 @@
       <div class="container">
         <h1>Welcome</h1>
         <h2>Have a look around</h2>
+        <a href="https://www.facebook.com/ben.greenwood.3344" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+        <a href="https://www.instagram.com/greenw0od/?hl=en" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
       </div>
     </div>
 
@@ -42,10 +44,15 @@
 
  <!-- PROFILE SECTION-->
 
- <section class="container profile" id=profile>
+   <section class="container profile" id=profile>
    <div class="row">
      <div class="col-sm-12">
-       <h4>Profile</h4>
+
+       <div class="section-header">
+         <h4>Profile</h4>
+       </div>
+
+       <div>
        <p id="tagline">Enthusiastic Web Developer</p>
      </div>
      <div class="col-sm-6">
@@ -65,6 +72,7 @@
    </div>
  </section>
 
+
  <!--PORTFOLIO SECTION-->
 
   <section class="container portfolio" id="portfolio">
@@ -72,16 +80,32 @@
      <h4 class=col-sm-12>Portfolio</h4>
      <p id="tagline">My Work</p>
      <figure class="col-sm-6">
-       <a href="https://greeny8008.github.io/Capstone/" target="_blank"><img src="./resources/images/capstone.png"></a>
+       <div class="animation-element slide-left second">
+       <div class="image-container">
+         <a href="https://greeny8008.github.io/Capstone/" target="_blank"><img src="./resources/images/capstone.png"></a>
+       </div>
+     </div>
      </figure>
      <figure class="col-sm-6">
-      <a href="https://greeny8008.github.io/Fotomatic/" target="_blank"><img src="./resources/images/fotomatic.png"></a>
+       <div class="animation-element slide-left first">
+       <div class="image-container">
+        <a href="https://greeny8008.github.io/Fotomatic/" target="_blank"><img src="./resources/images/fotomatic.png"></a>
+      </div>
+    </div>
      </figure>
      <figure class="col-sm-6">
-       <a href="https://greeny8008.github.io/Jumpstart/" target="_blank"><img src="./resources/images/Jumpstart.png"></a>
+       <div class="animation-element slide-left fourth">
+       <div class="image-container">
+         <a href="https://greeny8008.github.io/Jumpstart/" target="_blank"><img src="./resources/images/Jumpstart.png"></a>
+       </div>
+     </div>
      </figure>
      <figure class="col-sm-6">
-       <a href="https://greeny8008.github.io/Tortoiseshell-Optics/" target="_blank"><img src="./resources/images/Tortoiseshell.png"></a>
+       <div class="animation-element slide-left third">
+       <div class="image-container">
+         <a href="https://greeny8008.github.io/Tortoiseshell-Optics/" target="_blank"><img src="./resources/images/Tortoiseshell.png"></a>
+       </div>
+     </div>
      </figure>
    </div>
  </section>
@@ -157,6 +181,7 @@
 
    <!--EDUCATION SECTION-->
 
+<div class="animation-element slide-left">
    <section class="container education" id="education">
      <div class="row">
        <h4 class="col-sm-12">Education</h4>
@@ -176,24 +201,23 @@
            </ul>
          </div>
        </div>
-       <div class="col-sm-6">
-         <h5>Various Governing Bodies</h5>
-         <div class="date">
-           <p><strong>[2012-Present]</strong></p>
-         </div>
-       </div>
-       <div class="col-sm-6">
+       <div class="col-sm-12 additional">
          <h6><strong>Additional Qualifications</strong></h6>
          <div class="content-text">
            <ul>
-             <li>Full licensed driver</li>
-             <li>IT skills - Good knowledge of HTML5, CSS3, Command Line and Git. As well as front end techniques like Bootstrap (this website is an example of this).</li>
-             <li>CeMap 1 (Mortgage and Protection Adiver Exam)</li>
-             <li>Good understanding of Adobe Photoshop</li>
+             <li> <i class="fa fa-check-square-o"></i>Full licensed driver</li>
+             <li><i class="fa fa-check-square-o"></i>IT skills - Good knowledge of HTML5, CSS3, Command Line and Git. As well as front end techniques like Bootstrap (this website is an example of this).</li>
+             <li><i class="fa fa-check-square-o"></i>Ongoing development with Javascript and Jquery techniques.</li>
+             <li><i class="fa fa-check-square-o"></i>CeMap 1 (Mortgage and Protection Advisor Exam)</li> <br>
+             <li><i class="fa fa-check-square-o"></i>Good understanding of Adobe Photoshop</li>
            </ul>
        </div>
      </div>
    </section>
+ </div>
+
+
+
 
    <!--FOOTER SECTION-->
 
@@ -226,7 +250,7 @@
            <li ><strong>Connect</strong></li>
          </ul>
          <ul>
-           <i class="fa fa-facebook"></i><li><a href="https://www.facebook.com/ben.greenwood.3344" >Facebook</a></li> <br>
+           <i class="fa fa-facebook fa-lg"></i><li><a href="https://www.facebook.com/ben.greenwood.3344" >Facebook</a></li> <br>
            <i class="fa fa-instagram"></i><li><a href="https://www.instagram.com/greenw0od/?hl=en">Instagram</a></li> <br>
            <i class="fa fa-envelope-o"></i><li><a href="mailto:bentgreenwood@yahoo.com">Email Me</a></li> <br>
          </ul>
@@ -236,5 +260,17 @@
        </div>
      </div>
    </footer>
+
+   <!--Javascript-->
+
+   <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+  <script type="text/javascript" src="./resources/js/main.js"></script>
+
  </body>
 </html>
