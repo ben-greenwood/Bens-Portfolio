@@ -10,11 +10,12 @@ body {
   font-family: "Nixie One";
   font-size: 18px;
   margin: 0;
+  background-color: #004F66;
 
 }
 
 a {
-  color: #004F66;
+  color: #fff;
 }
 
 nav {
@@ -40,11 +41,12 @@ li {
   text-align: center;
   display: flex;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   margin: 0;
   color: #fff;
   text-shadow: 0.25px 0.25px 0.25px #000;
-  background-color: #5D6363;
+  background-color: #004F66;
+
 }
 
 .jumbotron .container {
@@ -59,4 +61,56 @@ li {
 .jumbotron span {
   color: #000;
   text-shadow: 0.25px 0.25px 0.25px #fff;
+}
+
+.col-sm-4 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  background-color: #002B38;
+  border-radius: 100%;
+  font-size: 6rem;
+  height: 13rem;
+  width: 13rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.fa-mobile {
+  font-size: 8rem;
+}
+
+.circle:hover {
+  background-color: #218C7D;
+  transform: scale(1.2);
+  transition: all 200ms ease-in-out;
+}
+
+.social .fa {
+  padding-right: 1rem;
+}
+.jumbotron a {
+  color: #fff;
+}
+
+h2 {
+  border-bottom: 2px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    height: 100vh;
+
+  }
+
+  .navbar {
+ position: relative;
+ margin-bottom: 40vh;
+  }
 }
