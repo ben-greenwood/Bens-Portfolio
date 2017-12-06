@@ -1,10 +1,10 @@
 TweenMax.from("body", 2, {y:-500, ease:Bounce.easeOut});
 
-TweenMax.from(".jumbotron h1", 2, {y:-500, rotation:30, ease: Elastic.easeOut.config(1, 0.3), delay:1.5});
+TweenMax.from(".jumbotron h1", 2, {y:-600, rotation:30, ease: Elastic.easeOut.config(1, 0.3), delay:1.5});
 
-TweenMax.from(".jumbotron h2", 2, {y:-500, rotation:30, ease: Elastic.easeOut.config(1, 0.3), delay:1.7});
+TweenMax.from(".jumbotron h2", 2, {y:-600, rotation:30, ease: Elastic.easeOut.config(1, 0.3), delay:1.7});
 
-TweenMax.from(".jumbotron .fa", 1.5, {x:-600, rotation:30, ease: Bounce.easeOut, delay:2});
+TweenMax.from(".jumbotron .fa", 1.5, {x:-1000, rotation:30, ease: Bounce.easeOut, delay:2});
 
 
 var $animation_elements = $('.animation-element');
